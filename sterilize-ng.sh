@@ -9,7 +9,7 @@
 # 2021-09-24 v0.50   Functional version
 # 2021-09-25 v0.60   Add Bing link extraction
 
-ORIGINAL_URL="https://support.apple.com/en-ca/billing?cid=email_receipt"
+ORIGINAL_URL="https://www.bing.com/aclick?ld=e85lLpIFNSrID30euP_VcLXzVUCUwRfPPo-iBLw0O1gLcHOmD7vJu945fEKZamVOIJ3OB0pyNTDRQx_amzsqpm0tpy8u6hxtB3t8giTJHyZ-uwJvL-SOsGCLwXOPQ3XMGn3XT-n8nwZACLgWKXQI-4oeJHSdJRWKz6TK0a7Y8J2c2SebX5&u=aHR0cHMlM2ElMmYlMmZ3d3cubGlnaHRpbnRoZWJveC5jb20lMmZwJTJmY2FzZS1mb3IteGlhb21pLXhpYW9taS1yZWRtaS03LWdvLXkzLW5vdGUtNy1ub3RlLTdzLWsyMC1rMjAtcHJvLTdhLXhpYW9taS1taS05LTktc2UtOXQtY2M5LWNjOS1lLWNhcmQtaG9sZGVyLWZsaXAtZnVsbC1ib2R5LWNhc2VzLXNvbGlkLWNvbG9yZWQtcHVfcDgxMjY3MzYuaHRtbCUzZmN1cnJlbmN5JTNkQ0FEJTI2bGl0Yl9mcm9tJTNkYmluZ19zaG9wcGluZyUyNnNrdSUzZDFfNDUlMjU3QzEwMjlfNDQ5NzclMjZjb3VudHJ5X2NvZGUlM2RjYSUyNnV0bV9zb3VyY2UlM2RiaW5nc2hvcHBpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkYmluZ3Nob3BwaW5nJTI2bGl0Yl9mcm9tJTNkcGFpZF9iaW5nJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX3Rlcm0lM2QlMjZ1dG1fY2FtcGFpZ24lM2QlMjU1QkVOJTI1NUQlMjU1QkJTQyUyNTVEJTI1NUJMSVRCJTI1NUQlMjU1QmMwJTI1NUQlMjU1QlBMTCUyNTVEKENBKShzaG9wcGluZykoQWxsKSUyNm1zY2xraWQlM2Q5NDJkYTcyZDY4MTQxOWU4MTc2NGM2NjM5NWE5N2Y0NQ&rlid=942da72d681419e81764c66395a97f45"
 
 read ORIGINAL_URL
 
@@ -23,6 +23,7 @@ function unwrap-ng() {
       RES=$(curl -sLI $1)
    fi
    <<<"$RES" grep -i Location \
+   | grep http \
    | tail -n 1 \
    | sed -E 's/location:.*(http.*)/\1/g' \
    | sed -E 's/(.*)./\1/g'
