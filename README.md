@@ -7,7 +7,7 @@ The surveillance capitalist economy is built on the relentless tracking of users
 
 The techniques employed by surveillance capitalists are multifold, but one of the easiest to fix is the pollution of URLs with tracking parameters. If you visit a link on Facebook by clicking on it, you are actually giving up a wealth of information about yourself unnecessarily. Here's a typical outgoing link that you would find on Facebook:
 
-<img src="https://github.com/NSBum/sterilize-ng/blob/master/fblink.png" width="50">
+<img src="https://github.com/NSBum/sterilize-ng/blob/master/fblink.png" width="50%">
 
 What is all this extra garbage that Facebook attachs to the actual link? Who knows? Somehow Facebook uses this to track your online behaviour. Otherwise, they would just display the actual link, which is quite simply: `https://www.playsmart.ca/social-hub/the-missing-millions/`
 
