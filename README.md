@@ -10,3 +10,9 @@ The techniques employed by surveillance capitalists are multifold, but one of th
 ![FB tracking garbage](fblink.png)
 
 What is all this extra garbage that Facebook attachs to the actual link? Who knows? Somehow Facebook uses this to track your online behaviour. Otherwise, they would just display the actual link, which is quite simply: `https://www.playsmart.ca/social-hub/the-missing-millions/`
+
+## Usage
+
+### Testing
+
+![Testing link sterilization](testing.mov)
