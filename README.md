@@ -15,4 +15,4 @@ What is all this extra garbage that Facebook attachs to the actual link? Who kno
 
 ### Testing
 
-![Testing link sterilization](testing.mov)
+<img src="https://github.com/NSBum/sterilize-ng/blob/master/testing.mov" width="50%">
