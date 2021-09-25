@@ -9,6 +9,8 @@ The techniques employed by surveillance capitalists are multifold, but one of th
 
 ![](fblink.png)
 
+<img src="https://github.com/NSBum/sterilize-ng/blob/master/fblink.png" width="200">
+
 What is all this extra garbage that Facebook attachs to the actual link? Who knows? Somehow Facebook uses this to track your online behaviour. Otherwise, they would just display the actual link, which is quite simply: `https://www.playsmart.ca/social-hub/the-missing-millions/`
 
 ## Usage
